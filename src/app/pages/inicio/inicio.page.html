@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <body style="background-color:#213331;">
+    
+    <p>Hacerca de Mi !!</p>
+    <div align="center"><h1 style="background-color:Violet;">Area Personal</h1>
+    <center><img src="assets/imagenes/hola.gif" width="300" height="250"></center>
+    <h1>Hola Feliz y Bendecido Dia!!!</h1>
+    <h3>Mi nombre es: Damaris Alejandra Martinez Rodriguez</h3>
+    <p>Edad: 22 años de edad</p>
+    <p>Genero: F</p>
+    <p>Actualmente pasante en la universidad Metropolitana de Honduras, en el area de Ingieneria en Informatica, me considero una persona comun y que le gusta aprender</p>
+    <img src="assets/imagenes/img.gif" width="150" height="150"></div></body>
+    
+
+<ion-list>
+  <ion-item  *ngFor="let c of componentes">
+    <ion-icon [name]="c.icon" slot="start"
+    [routerLink]="c.redirecto"></ion-icon>
+    {{c.name}}
+  </ion-item>
+</ion-list>
+
+</ion-content>
